@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .header {
+        @apply font-bold border-dark border-t-2 border-b-2 text-3xl mt-8 mb-4 text-dark;
+    }
+    
+    .software-label {
+        @apply bg-dark m-1 px-3 py-1 rounded;
+    }
+    
+    .detail-label {
+        @apply font-normal text-sm flex items-center bg-light px-2 rounded text-dark py-1;
+    }
+    
+    .btn-icons {
+        @apply bg-light text-dark rounded-full p-4 shadow-lg hover:text-light hover:bg-dark md:hover:bg-accent transform hover:scale-110 transition-all duration-300;
+    }
+    
+    .svg {
+        clip-path:polygon(0% 0%, 100% 0%, 100% 65%, 50% 75%, 0% 65%);
+    }
+}

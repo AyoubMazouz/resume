@@ -1,0 +1,259 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prepare resume PDF</title>
+    <link rel="stylesheet" href="pure.css">
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+
+<body class="flex items-center justify-center flex-col font-medium text-dark bg-white text-md leading-4">
+    <!-- buttons -->
+    <div class="absolute top-1 right-5">
+        <!-- download -->
+        <button onclick="genaratePdf()" class="btn-icons">
+            <i id="icon-download" class="fas fa-arrow-down"></i>
+        </button>
+    </div>
+    <!-- body -->
+    <div id="resume" class="w-full bg-light shadow-2xl transition-all duration-300">
+        <div class="grid grid-cols-3">
+            <!-- main -->
+            <div class="col-span-3">
+                <!-- header sm -->
+                <div class="bg-accent text-light">
+                    <div class="grid grid-cols-3 py-2">
+                        <!-- image -->
+                        <div class="col-span-1 flex justify-center w-full">
+                            <div class="w-8/12">
+                                <div class="aspect-w-1 aspect-h-1 rounded-2xl overflow-hidden shadow-lg">
+                                    <img src="../static/profile.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-2 space-x-2 space-y-1 mr-4 flex flex-col">
+                            <!-- fullname -->
+                            <div class="mx-1 pb-1">
+                                <h1 class="text-2xl font-normal">
+                                    Othmane <span class="font-bold">Kourtni</span>
+                                </h1>
+                            </div>
+                            <!-- adress -->
+                            <div>
+                                <div class="detail-label">
+                                    <i class="fas fa-map-marker-alt text-lg mr-2"></i>
+                                    Projet Sidi-Maarouf IM1 N1 Bd Abou Bakr Kadiri, Casablanca.
+                                </div>
+                            </div>
+                            <!-- phone -->
+                            <div>
+                                <div class="detail-label">
+                                    <i class="fas fa-phone-alt text-lg mr-2"></i>
+                                    0604017618
+                                </div>
+                            </div>
+                            <!-- email -->
+                            <div>
+                                <div class="detail-label">
+                                    <i class="fas fa-envelope-open-text text-lg mr-2"></i>
+                                    othmane.kourtni@gmail.com
+                                </div>
+                            </div>
+                            <!-- website -->
+                            <div>
+                                <div class="detail-label">
+                                    <i class="fas fa-paperclip text-lg mr-2"></i>
+                                    <a href="#" class="underline">
+                                        www.othmanekourtni.com
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- formation -->
+                <div class="space-y-2 px-6 -mt-4">
+                    <h3 class="header text-xl">Formations:</h3>
+                    <!-- 2018/2019 -->
+                    <div class="grid grid-cols-6 space-x-4 md:space-x-0">
+                        <span class="col-span-2">
+                            Sep 2018 - Sep 2019
+                        </span>
+                        <div class="col-span-4">
+                            licence professionnelle en mécatronique automobile à l’Ecole National
+                            Supérieur de
+                            l’Electricité et de Mécanique de Casablanca.
+                        </div>
+                    </div>
+                    <!-- 2016-2018 -->
+                    <div class="grid grid-cols-6 space-x-4 md:space-x-0">
+                        <span class="col-span-2">
+                            Sep 2018 - Sep 2019
+                        </span>
+                        <div class="col-span-4">
+                            Diplôme de Technicien Spécialisé en
+                            Diagnostic
+                            et Electronique Embarqué en
+                            Automobile au Centre de Recherche et d’Engineering Automobile de Casablanca.
+                        </div>
+                    </div>
+                    <!-- 2015-2016 -->
+                    <div class="grid grid-cols-6 space-x-4 md:space-x-0">
+                        <span class="col-span-2">
+                            Sep 2015 - Sep 2016
+                        </span>
+                        <div class="col-span-4">
+                            Baccalauréat branche science de vie et de la terre au Lycée Ibno Alkhatib.
+                        </div>
+                    </div>
+                </div>
+                <!-- Experience -->
+                <div class="space-y-2 px-6 -mt-4">
+                    <h3 class="header text-xl">Experience
+                        professionnelles
+                    </h3>
+                    <div class="grid grid-cols-6 space-x-4 md:space-x-0">
+                        <span class="col-span-2">
+                            Sep 2015 - Sep 2016
+                        </span>
+                        <div class="col-span-4">
+                            Technicien en diagnostic et électricité chez la société Auto Nejma
+                            “Mercedes-Benz“ à
+                            Marrakech..
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-6 space-x-4 md:space-x-0">
+                        <span class="col-span-2">
+                            Sep 2015 - Sep 2016
+                        </span>
+                        <div class="col-span-4">
+                            Stage au SAV chez la société Auto Nejma“Mercedes-Benz“ siège social a
+                            Casablanca
+                            .
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-6 space-x-4 md:space-x-0">
+                        <span class="col-span-2">
+                            Sep 2015 - Sep 2016
+                        </span>
+                        <div class="col-span-4">
+                            4 mois de stage en alternance chez l’atelier de diagnostic automobile LB
+                            auto.
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-6 space-x-4 md:space-x-0">
+                        <span class="col-span-2">
+                            Sep 2015 - Sep 2016
+                        </span>
+                        <div class="col-span-4">
+                            5 mois de stage dans un atelier de réparation automobile.
+                        </div>
+                    </div>
+                </div>
+                <!-- competence -->
+                <div class="space-y-2 px-6 md:mb-8 -mt-4">
+                    <h3 class="header text-xl">Compétences </h3>
+                    <div class="grid grid-cols-2 gap-8 px-4">
+                        <ul class="list-disc">
+                            <li class="">
+                                Maintenance préventive des véhicules.
+                            </li>
+                            <li>
+                                Contrôle et réparation du moteur thermique.
+                            </li>
+                            <li>
+                                Réparation des systèmes de suspension.
+                            </li>
+                            <li>
+                                Suivi des véhicules dans l’atelier.
+                            </li>
+                            <li>
+                                Entretien des systèmes de freinage, direction et suspension.
+                            </li>
+                            <li>
+                                Organisation des exposés sur les différents systèmes (formation continu
+                                interne).
+                            </li>
+                            <li>
+                                Diagnostic des bruits mécaniques.
+                            </li>
+                        </ul>
+                        <ul class="list-disc">
+                            <li>
+                                Poursuivre la procédure de garantie.
+                            </li>
+                            <li>
+                                Réception des clients.
+                            </li>
+                            <li>
+                                facturation.
+                            </li>
+                            <li>
+                                la géométrie.
+                            </li>
+                            <li>
+                                Diagnostic des systèmes électromécaniques et électroniques à l’aide des
+                                appareils de diagnostic et des outils de contrôles.
+                            </li>
+                            <li>
+                                Diagnostic et réparation du système de climatisation.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- footer sm -->
+                <div class="mx-6">
+                    <!-- languages -->
+                    <div class="-mt-4">
+                        <h3 class="header text-xl">Langues </h3>
+                        <div class="flex flex-col">
+                            <div class="text-sm text-dark">Anglais </div>
+                            <div class="h-2 w-full rounded bg-dark my-1">
+                                <div class="bg-accent rounded h-full w-4/5"></div>
+                            </div>
+                            <div class="text-xs self-end text-dark">Very good </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="text-sm text-dark">Francais </div>
+                            <div class="h-2 w-full rounded bg-dark my-1">
+                                <div class="bg-accent rounded h-full w-3/5"></div>
+                            </div>
+                            <div class="text-xs self-end text-dark">good </div>
+                        </div>
+                    </div>
+                    <!-- software -->
+                    <div class="mb-2 -mt-4">
+                        <h3 class="header text-xl">Software </h3>
+                        <div class="flex flex-wrap text-sm text-light px-6">
+                            <div class="software-label">
+                                Microsoft Office</div>
+                            <div class="software-label">
+                                Auto CAD</div>
+                            <div class="software-label">
+                                IDIS</div>
+                            <div class="software-label">
+                                WIS</div>
+                            <div class="software-label">
+                                EPC</div>
+                            <div class="software-label">
+                                ASRA XENTRY</div>
+                            <div class="software-label">
+                                Langage C</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <script src="https://kit.fontawesome.com/465048a78f.js" crossorigin="anonymous"></script>
+            <!-- html2pdf -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+                integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+            <script src="static/resume.js"></script>
+</body>
+
+</html>
