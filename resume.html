@@ -5,29 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
-    <link rel="stylesheet" href="../pure.css">
-    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="stylesheet" href="./pure.css">
+    <link rel="stylesheet" href="./src/styles.css">
 </head>
 
-<body class="flex items-center justify-center flex-col font-medium text-dark bg-white">
+<body
+    class="flex items-center justify-center flex-col font-medium text-dark dark:text-dark bg-white dark:bg-dark font-primary font-semibold text-sm">
+
     <!-- buttons -->
     <div
         class="mt-2 space-x-2 absolute top-1 right-5 md:space-x-0 md:fixed md:top-52 md:right-1 flex md:flex-col md:space-y-6">
-        <!-- share -->
-        <button onclick="copyLink()" class="btn-icons">
-            <i id="icon-link" class="fas fa-copy"></i>
-        </button>
+        <!-- darkMode -->
+        <button onclick="dark()">Dark</button>
         <!-- download -->
         <a href="../static/resume.pdf" download="resume.pdf" class="btn-icons">
             <i id="icon-download" class="fas fa-arrow-down"></i>
         </a>
     </div>
+
     <!-- body -->
     <div id="resume"
-        class="w-full md:w-medium md:rounded-2xl md:my-12 lg:w-large xl:w-xlarge bg-light overflow-hidden shadow-2xl transition-all duration-300">
+        class="w-full md:w-medium md:rounded-2xl md:my-12 lg:w-large xl:w-xlarge bg-light overflow-hidden shadow-2xl transition-all duration-300 dark:bg-dark dark:text-light">
         <div class="grid grid-cols-3">
             <!-- main -->
             <div class="col-span-3 lg:col-span-2">
+
                 <!-- header sm -->
                 <div class="lg:hidden bg-accent text-light">
                     <div class="grid grid-cols-3 py-6">
@@ -35,36 +37,39 @@
                         <div class="col-span-1 flex justify-center w-full">
                             <div class="w-5/6">
                                 <div class="aspect-w-1 aspect-h-1 rounded-2xl overflow-hidden shadow-lg">
-                                    <img src="../static/profile.jpg" alt="">
+                                    <img src="./src/profile.png" alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="col-span-2 space-x-2 space-y-1 mr-4 flex flex-col">
                             <!-- fullname -->
-                            <div class="mx-1 pb-4">
-                                <h1 class="text-2xl font-normal">
-                                    Othmane <span class="font-bold">Kourtni</span>
+                            <div class="mx-1">
+                                <h1 class="text-2xl font-light">
+                                    MAZOUZ AYOUB
+                                </h1>
+                                <h1 class="text-xl font-light tracking-wide">
+                                    Software Developer
                                 </h1>
                             </div>
                             <!-- adress -->
                             <div>
                                 <div class="detail-label">
                                     <i class="fas fa-map-marker-alt text-lg mr-2"></i>
-                                    Projet Sidi-Maarouf IM1 N1 Bd Abou Bakr Kadiri, Casablanca.
+                                    Sidi-Maarouf Lot Anna 4, 14_6, Casablanca.
                                 </div>
                             </div>
                             <!-- phone -->
                             <div>
                                 <div class="detail-label">
                                     <i class="fas fa-phone-alt text-lg mr-2"></i>
-                                    0604017618
+                                    0770759106
                                 </div>
                             </div>
                             <!-- email -->
                             <div>
                                 <div class="detail-label">
                                     <i class="fas fa-envelope-open-text text-lg mr-2"></i>
-                                    othmane.kourtni@gmail.com
+                                    ayoub2000mazouz@gmail.com
                                 </div>
                             </div>
                             <!-- website -->
@@ -72,291 +77,263 @@
                                 <div class="detail-label">
                                     <i class="fas fa-paperclip text-lg mr-2"></i>
                                     <a href="#" class="underline">
-                                        www.othmanekourtni.com
+                                        www.ayoubmazouz.com
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <!-- formation -->
                 <div class="space-y-2 px-6">
                     <h3 class="header">Formations:</h3>
                     <!-- section-1 -->
                     <div class="grid grid-cols-6 space-x-4 md:space-x-0">
                         <span class="col-span-2">
-                            Sep 2018 - Sep 2019
+                            Sep 2019 - jun 2020
                         </span>
                         <div class="col-span-4">
-                            licence professionnelle en mécatronique automobile à l’Ecole National
-                            Supérieur de
-                            l’Electricité et de Mécanique de Casablanca.
+                            baccalauréat branche Science de la Vie et la Terre (SVT).
                         </div>
                     </div>
                     <!-- section-2 -->
                     <div class="grid grid-cols-6 space-x-4 md:space-x-0">
                         <span class="col-span-2">
-                            Sep 2018 - Sep 2019
+                            Sep 2020 - jun 2021
                         </span>
                         <div class="col-span-4">
-                            Diplôme de Technicien Spécialisé en
-                            Diagnostic
-                            et Electronique Embarqué en
-                            Automobile au Centre de Recherche et d’Engineering Automobile de Casablanca.
+                            Première année d'Étude Anglaise (FSAC).
                         </div>
                     </div>
                     <!-- section-3 -->
                     <div class="grid grid-cols-6 space-x-4 md:space-x-0">
                         <span class="col-span-2">
-                            Sep 2015 - Sep 2016
+                            Sep 2021 - jun 2022
                         </span>
                         <div class="col-span-4">
-                            Baccalauréat branche science de vie et de la terre au Lycée Ibno Alkhatib.
+                            Première année en infrastructure informatique (OFPPT).
                         </div>
                     </div>
                 </div>
-                <!-- Experience -->
-                <div class="space-y-2 px-6">
-                    <h3 class="header">Experience
-                        professionnelles
-                    </h3>
-                    <!-- section-1 -->
-                    <div class="grid grid-cols-6 space-x-4 md:space-x-0">
-                        <span class="col-span-2">
-                            Sep 2015 - Sep 2016
-                        </span>
-                        <div class="col-span-4">
-                            Technicien en diagnostic et électricité chez la société Auto Nejma
-                            “Mercedes-Benz“ à
-                            Marrakech..
-                        </div>
-                    </div>
-                    <!-- section-2 -->
-                    <div class="grid grid-cols-6 space-x-4 md:space-x-0">
-                        <span class="col-span-2">
-                            Sep 2015 - Sep 2016
-                        </span>
-                        <div class="col-span-4">
-                            Stage au SAV chez la société Auto Nejma“Mercedes-Benz“ siège social a
-                            Casablanca
-                            .
-                        </div>
-                    </div>
-                    <!-- section-3 -->
-                    <div class="grid grid-cols-6 space-x-4 md:space-x-0">
-                        <span class="col-span-2">
-                            Sep 2015 - Sep 2016
-                        </span>
-                        <div class="col-span-4">
-                            4 mois de stage en alternance chez l’atelier de diagnostic automobile LB
-                            auto.
-                        </div>
-                    </div>
-                    <!-- section-4 -->
-                    <div class="grid grid-cols-6 space-x-4 md:space-x-0">
-                        <span class="col-span-2">
-                            Sep 2015 - Sep 2016
-                        </span>
-                        <div class="col-span-4">
-                            5 mois de stage dans un atelier de réparation automobile.
-                        </div>
-                    </div>
-                </div>
+
                 <!-- competence -->
                 <div class="space-y-2 px-6 md:mb-8">
                     <h3 class="header">Compétences </h3>
-                    <div class="grid grid-cols-2 gap-8 px-4">
+                    <div class="px-4 grid grid-cols-2 gap-x-6">
                         <!-- list-1 -->
                         <ul class="list-disc">
                             <li class="">
-                                Maintenance préventive des véhicules.
+                                Cross platform Applications.
                             </li>
                             <li>
-                                Contrôle et réparation du moteur thermique.
+                                Full Stack Web Applications.
                             </li>
                             <li>
-                                Réparation des systèmes de suspension.
+                                Debugging and testing.
                             </li>
                             <li>
-                                Suivi des véhicules dans l’atelier.
+                                Well aware of best practices and project structure.
                             </li>
                             <li>
-                                Entretien des systèmes de freinage, direction et suspension.
+                                Work efficiently in both environments (Linux, Windows).
                             </li>
                             <li>
-                                Organisation des exposés sur les différents systèmes (formation continu
-                                interne).
+                                Able to learn from documentation or other forms of resources.
                             </li>
                         </ul>
-                        <!-- list-2 -->
                         <ul class="list-disc">
+
                             <li>
-                                Diagnostic des bruits mécaniques.
+                                Problem solving and critical thinking.
                             </li>
                             <li>
-                                Poursuivre la procédure de garantie.
+                                Time management.
                             </li>
                             <li>
-                                Réception des clients.
+                                Active listener, enjoy collaborative work, good communicator.
                             </li>
                             <li>
-                                facturation.
-                            </li>
-                            <li>
-                                la géométrie.
-                            </li>
-                            <li>
-                                Diagnostic des systèmes électromécaniques et électroniques à l’aide des
-                                appareils de diagnostic et des outils de contrôles.
-                            </li>
-                            <li>
-                                Diagnostic et réparation du système de climatisation.
+                                Know how to use Microsoft Office, Adobe Products and other common softwares.
                             </li>
                         </ul>
                     </div>
                 </div>
+
+                <!-- Projects -->
+                <div class="space-y-2 px-6 md:mb-8">
+                    <h3 class="header">Projects </h3>
+                    <div>
+                        <span class="text-accent text-base">
+                            Sudoku Solver Visualizer:
+                        </span>
+                        <span class="">
+                            Web application ( HTML, CSS, vanilla JS ).
+                        </span>
+                        <div>
+                            Sudoku game made with Vanilla JavaScript using Canvas API, While you can play the
+                            game you can also solve any board and you can Visualize the steps of the algorithm.
+                        </div>
+                    </div>
+                    <div>
+                        <span class="text-accent text-base">
+                            Classic Tetris:
+                        </span>
+                        <span>
+                            Web application ( HTML, CSS, vanilla JS ).
+                        </span>
+                        <div>
+                            Tetris clone with the classic score system near identical to the classic Tetris.
+                        </div>
+                    </div>
+                    <div class="text-accent text-xs">
+                        More Projects on my Website with <span class="font-bold">
+                            Github repository and live Demo
+                        </span>.
+                    </div>
+                </div>
+                <!-- Skills -->
+                <div class="mb-6 px-6 lg:hidden">
+                    <h3 class="header">Skills</h3>
+                    <div>
+                        Bash | Git | SQL, FireBase | Python | C# | HTML5/CSS (SASS, Bootstrap, Tailwindcss) |
+                        JavaScript (NodeJs, TypeScript,React).
+
+                    </div>
+                </div>
+                <!-- Hobbies -->
+                <div class="mb-6 px-6 lg:hidden">
+                    <h3 class="header">Hobbies </h3>
+                    <div>
+                        Drawing | Movies | Documentaries | Podcasts | Astronomy | Biology | Technologie | Puzzles |
+                        Video games.
+                    </div>
+                </div>
                 <!-- footer sm -->
-                <div class="lg:hidden mx-6">
+                <div class="lg:hidden mx-6 pb-6">
                     <!-- languages -->
                     <div class="">
                         <h3 class="header">Langues </h3>
                         <!-- anglais -->
                         <div class="flex flex-col">
-                            <div class="text-sm text-dark">Anglais </div>
-                            <div class="h-2 w-full rounded bg-dark my-1">
-                                <div class="bg-accent rounded h-full w-4/5"></div>
+                            <div class="text-sm text-dark dark:text-light">Anglais </div>
+                            <div class="h-1 w-full rounded bg-dark my-1 dark:bg-light">
+                                <div class="bg-accent rounded h-full w-5/6"></div>
                             </div>
-                            <div class="text-xs self-end text-dark">Very good </div>
+                            <div class="text-xs self-end text-dark dark:text-light">VERY GOOD </div>
                         </div>
                         <!-- francais -->
-                        <div class="flex flex-col">
-                            <div class="text-sm text-dark">Francais </div>
-                            <div class="h-2 w-full rounded bg-dark my-1">
-                                <div class="bg-accent rounded h-full w-3/5"></div>
+                        <div class="flex flex-col -mt-3">
+                            <div class="text-sm text-dark dark:text-light">Francais </div>
+                            <div class="h-1 w-full rounded bg-dark my-1 dark:bg-light">
+                                <div class="bg-accent rounded h-full w-2/6"></div>
                             </div>
-                            <div class="text-xs self-end text-dark">good </div>
-                        </div>
-                    </div>
-                    <!-- software -->
-                    <div class="mb-6">
-                        <h3 class="header">Software </h3>
-                        <div class="flex flex-wrap text-sm text-light  px-6">
-                            <div class="software-label">
-                                Microsoft Office</div>
-                            <div class="software-label">
-                                Auto CAD</div>
-                            <div class="software-label">
-                                IDIS</div>
-                            <div class="software-label">
-                                WIS</div>
-                            <div class="software-label">
-                                EPC</div>
-                            <div class="software-label">
-                                ASRA XENTRY</div>
-                            <div class="software-label">
-                                Langage C</div>
+                            <div class="text-xs self-end text-dark dark:text-light">GOOD </div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- sidepanel -->
-            <div class="hidden lg:block col-span-1 h-full relative text-light bg-accent">
+            <div
+                class="hidden lg:block col-span-1 h-full relative text-light bg-accent font-primary font-semibold text-sm py-6">
                 <!-- svg -->
-                <div class="w-full h-72 absolute top-0">
+                <div class="w-full h-72 absolute top-0 -z-50">
                     <svg src="" alt="" class="h-full w-full bg-dark svg"></svg>
                 </div>
                 <!-- fullname -->
-                <div class="absolute left-6 top-6">
-                    <h1 class="text-2xl text-dark">
-                        <span>Othmane </span><span class="font-bold">Kourtni</span>
+                <div class="flex justify-center items-center">
+                    <h1 class="text-2xl font-light tracking-wider">
+                        MAZOUZ AYOUB
                     </h1>
                 </div>
                 <!-- image -->
                 <div class="flex justify-center w-full">
-                    <div class="w-5/6 mt-16 xl:w-4/6 xl:mt-6">
-                        <div class="aspect-w-1 aspect-h-1 rounded-2xl overflow-hidden shadow-lg border-dark">
-                            <img src="../static/profile.jpg" alt="">
+                    <div class="w-5/6 xl:w-4/6">
+                        <div class="aspect-square w-56 rounded-2xl overflow-hidden shadow-lg border-dark">
+                            <img src="./src/profile.png" alt="">
                         </div>
                     </div>
                 </div>
-                <div>
-                    <h3 class="ml-6 -mb-2 mt-2 font-normal text-lg">Professional Simp</h3>
+                <div class="flex justify-center items-center">
+                    <h1 class="px-6 text-xl font-light tracking-widest">
+                        software Developer
+                    </h1>
                 </div>
-                <div class="space-y-6 pb-4">
+                <div class="space-y-4 -mt-4 pb-4 font-normal">
                     <!-- info -->
                     <br>
                     <div class="space-y-2">
-                        <h3 class="text-xl my-2 text-bold bg-dark w-full px-6 py-2">Personal Info</h3>
-                        <!-- adress -->
-                        <div class="px-6">
-                            <div class="font-medium text-light">Adress</div>
-                            <div class="font-normal text-sm">
-                                Projet Sidi-Maarouf IM1 N1 Bd Abou Bakr Kadiri, Casablanca.
+                        <h3 class="side-header">Personal Info</h3>
+                        <div class="px-6 text-xs font-semibold">
+                            <!-- adress -->
+                            <div>
+                                <div class="">
+                                    <i class="fas fa-map-marker-alt text-lg mr-2"></i>
+                                    Sidi-Maarouf Lot Anna 4, 14_6, Casablanca.
+                                </div>
+                            </div>
+                            <!-- phone -->
+                            <div>
+                                <div class="">
+                                    <i class="fas fa-phone-alt text-lg mr-2"></i>
+                                    07 70 75 91 06
+                                </div>
+                            </div>
+                            <!-- email -->
+                            <div>
+                                <div class="">
+                                    <i class="fas fa-envelope-open-text text-lg mr-2"></i>
+                                    ayoub2000mazouz@gmail.com
+                                </div>
+                            </div>
+                            <!-- website -->
+                            <div>
+                                <div class="">
+                                    <i class="fas fa-paperclip text-lg mr-2"></i>
+                                    <a href="#" class="underline">
+                                        www.ayoubmazouz.com
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <!-- phone -->
-                        <div class="px-6">
-                            <div class="font-medium text-light">Phone </div>
-                            <div class="font-normal text-sm">
-                                0604017618
-                            </div>
+                    </div>
+                    <!-- Skills -->
+                    <div>
+                        <h3 class="side-header">Skills </h3>
+                        <div class="flex flex-wrap text-sm text-light px-6 font-semibold">
+                            Bash | Git | SQL, FireBase | Python | C# | HTML5/CSS (SASS, Bootstrap, Tailwindcss) |
+                            JavaScript (NodeJs, TypeScript, React).
+
                         </div>
-                        <!-- email -->
-                        <div class="px-6">
-                            <div class="font-medium text-light">E-mail </div>
-                            <div class="font-normal text-sm">
-                                othmane.kourtni@gmail.com
-                            </div>
-                        </div>
-                        <!-- website -->
-                        <div class="px-6">
-                            <div class="font-medium text-light">Website </div>
-                            <div class="font-normal text-sm">
-                                <a href="#" class="underline">
-                                    www.othmanekourtni.com
-                                </a>
-                            </div>
+                    </div>
+                    <!-- Hobbies -->
+                    <div>
+                        <h3 class="side-header">Hobbies </h3>
+                        <div class="flex flex-wrap text-sm text-light px-6 font-semibold">
+                            Drawing | Movies | Documentaries | Podcasts | Astronomy | Biology | Technologie |
+                            Puzzles |
+                            Video games.
                         </div>
                     </div>
                     <!-- languages -->
                     <div>
-                        <h3 class="text-xl my-2 text-bold bg-dark w-full px-6 py-2">Langues </h3>
+                        <h3 class="side-header">Langues </h3>
                         <!-- anglais -->
                         <div class="flex flex-col px-6">
-                            <div class="text-sm text-light">Anglais </div>
-                            <div class="h-2 w-full rounded bg-dark my-1">
-                                <div class="bg-light rounded h-full w-4/5"></div>
+                            <div class="font-bold text-light">Anglais</div>
+                            <div class="h-1 w-full rounded bg-dark my-1">
+                                <div class="bg-light rounded h-full w-5/6"></div>
                             </div>
-                            <div class="text-xs self-end text-light">Very good </div>
+                            <div class="text-xs self-end text-light">VERY GOOD</div>
                         </div>
                         <!-- francais -->
-                        <div class="flex flex-col px-6">
-                            <div class="text-sm text-light">Francais </div>
-                            <div class="h-2 w-full rounded bg-dark my-1">
-                                <div class="bg-light rounded h-full w-3/5"></div>
+                        <div class="flex flex-col px-6 -mt-3">
+                            <div class="text-sm font-bold">Francais</div>
+                            <div class="h-1 w-full rounded bg-dark my-1">
+                                <div class="bg-light rounded h-full w-2/6"></div>
                             </div>
-                            <div class="text-xs self-end text-light">Good </div>
-                        </div>
-                    </div>
-                    <!-- software -->
-                    <div>
-                        <h3 class="text-xl my-2 text-bold bg-dark w-full px-6 py-2">Software </h3>
-                        <div class="flex flex-wrap text-sm text-light px-6">
-                            <div class="software-label">
-                                Microsoft Office</div>
-                            <div class="software-label">
-                                Auto CAD</div>
-                            <div class="software-label">
-                                IDIS</div>
-                            <div class="software-label">
-                                WIS</div>
-                            <div class="software-label">
-                                EPC</div>
-                            <div class="software-label">
-                                ASRA XENTRY</div>
-                            <div class="software-label">
-                                Langage C</div>
+                            <div class="text-xs self-end text-light">GOOD</div>
                         </div>
                     </div>
                 </div>
@@ -366,7 +343,7 @@
         <!-- icons -->
         <script src="https://kit.fontawesome.com/465048a78f.js" crossorigin="anonymous"></script>
 
-        <script src="../static/resume.js"></script>
+        <script src="./src/script.js"></script>
 </body>
 
 </html>

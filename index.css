@@ -5,7 +5,11 @@
 
 @layer components {
     .header {
-        @apply font-bold border-dark border-t-2 border-b-2 text-3xl mt-8 mb-4 text-dark;
+        @apply font-bold border-dark border-t-2 border-b-2 text-2xl mt-8 mb-4 text-dark dark:text-light dark:border-light;
+    }
+
+    .side-header {
+        @apply text-xl my-2 font-semibold bg-dark w-full px-6 py-1;
     }
     
     .software-label {
@@ -13,7 +17,7 @@
     }
     
     .detail-label {
-        @apply font-normal text-sm flex items-center bg-light px-2 rounded text-dark py-1;
+        @apply font-semibold flex items-center bg-light px-2 rounded text-dark py-1 dark:bg-dark dark:text-light;
     }
     
     .btn-icons {

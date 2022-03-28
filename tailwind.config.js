@@ -1,30 +1,27 @@
 module.exports = {
-  purge: ["*.html"],
-  darkMode: false, // or 'media' or 'class'
+  purge: ['*.html'],
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
+      fontFamily: {
+        'primary': 'montserrat'
+      },
       width: {
         "medium": "44rem",
         "large": "52rem",
         "xlarge": "64rem"
       },
+      // colors: {
+      //   "dark": "#112D4E",
+      //   "light": "#F9F7F7",
+      //   "accent": "#3F72AF",
+      // }
+
       colors: {
-        "dark": "#112D4E",
-        "light": "#F9F7F7",
-        "accent": "#3F72AF",
+        "dark": "#222831",
+        "light": "#DDDDDD",
+        "accent": "#F05454",
       }
-
-      // colors: {
-      //   "dark": "#9D9D9D",
-      //   "light": "#FEFBF3",
-      //   "accent": "#79B4B7",
-      // }
-
-      // colors: {
-      //   "dark": "#222831",
-      //   "light": "#DDDDDD",
-      //   "accent": "#F05454",
-      // }
 
     },
   },
@@ -33,7 +30,7 @@ module.exports = {
 
     },
   },
-  plugins: [require("@tailwindcss/aspect-ratio")],
+  plugins: [],
 }
 
 
