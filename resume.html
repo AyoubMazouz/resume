@@ -16,11 +16,22 @@
     <div
         class="mt-2 space-x-2 absolute top-1 right-5 md:space-x-0 md:fixed md:top-52 md:right-1 flex md:flex-col md:space-y-6">
         <!-- darkMode -->
-        <button onclick="dark()">Dark</button>
+        <div id="dark" class="custom-button">
+            <div>Dark Mode</div>
+            <div id="sun-icon" class="hidden">
+                <i class="fa-solid fa-sun"></i>
+            </div>
+            <div id="moon-icon">
+                <i class="fa-solid fa-moon"></i>
+            </div>
+        </div>
         <!-- download -->
-        <a href="../static/resume.pdf" download="resume.pdf" class="btn-icons">
+        <div class="custom-button">
+            <a href="../static/resume.pdf" download="resume.pdf">
+                Download
+            </a>
             <i id="icon-download" class="fas fa-arrow-down"></i>
-        </a>
+        </div>
     </div>
 
     <!-- body -->
@@ -94,7 +105,7 @@
                             Sep 2019 - jun 2020
                         </span>
                         <div class="col-span-4">
-                            baccalauréat branche Science de la Vie et la Terre (SVT).
+                            Baccalauréat branche Science de la Vie et la Terre (SVT).
                         </div>
                     </div>
                     <!-- section-2 -->
@@ -130,7 +141,10 @@
                                 Full Stack Web Applications.
                             </li>
                             <li>
-                                Automation and basic AI.
+                                Basic AI and Neural Networks.
+                            </li>
+                            <li>
+                                Automation and Visualization.
                             </li>
                             <li>
                                 Debugging and testing.
@@ -139,16 +153,17 @@
                                 Well aware of best practices and project structure.
                             </li>
                             <li>
-                                Work efficiently in both environments (Linux, Windows).
+                                Problem solving and critical thinking.
                             </li>
                         </ul>
                         <ul class="list-disc">
                             <li>
-                                Able to learn from documentation or other forms of resources.
+                                Work efficiently in both environments (Linux, Windows).
                             </li>
                             <li>
-                                Problem solving and critical thinking.
+                                Able to learn from documentation or other forms of resources.
                             </li>
+
                             <li>
                                 Time management.
                             </li>
@@ -255,8 +270,8 @@
                     </div>
                 </div>
                 <div class="flex justify-center items-center">
-                    <h1 class="px-6 text-xl font-light tracking-widest">
-                        software Developer
+                    <h1 class="px-6 text-lg font-bold tracking-widest">
+                        Software Developer
                     </h1>
                 </div>
                 <div class="space-y-4 -mt-4 pb-4 font-normal">
@@ -321,18 +336,18 @@
                         <!-- anglais -->
                         <div class="flex flex-col px-6">
                             <div class="font-bold text-light">Anglais</div>
-                            <div class="h-1 w-full rounded bg-dark my-1">
+                            <div class="h-1 w-full rounded bg-dark">
                                 <div class="bg-light rounded h-full w-5/6"></div>
                             </div>
-                            <div class="text-xs self-end text-light">VERY GOOD</div>
+                            <div class="text-[0.6rem] self-end text-light">VERY GOOD</div>
                         </div>
                         <!-- francais -->
                         <div class="flex flex-col px-6 -mt-3">
                             <div class="text-sm font-bold">Francais</div>
-                            <div class="h-1 w-full rounded bg-dark my-1">
+                            <div class="h-1 w-full rounded bg-dark">
                                 <div class="bg-light rounded h-full w-2/6"></div>
                             </div>
-                            <div class="text-xs self-end text-light">GOOD</div>
+                            <div class="text-[0.6rem] self-end text-light">GOOD</div>
                         </div>
                     </div>
                 </div>
