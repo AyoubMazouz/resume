@@ -546,16 +546,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .custom-button{
   display: flex;
+  height: 2.5rem;
+  width: 2.5rem;
   cursor: pointer;
   align-items: center;
+  justify-content: center;
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(34 40 49 / var(--tw-bg-opacity));
+  background-color: rgb(221 221 221 / var(--tw-bg-opacity));
   padding: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 600;
   --tw-text-opacity: 1;
-  color: rgb(221 221 221 / var(--tw-text-opacity));
+  color: rgb(34 40 49 / var(--tw-text-opacity));
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
@@ -574,14 +580,24 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .dark .custom-button{
   --tw-bg-opacity: 1;
-  background-color: rgb(221 221 221 / var(--tw-bg-opacity));
+  background-color: rgb(34 40 49 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgb(34 40 49 / var(--tw-text-opacity));
+  color: rgb(221 221 221 / var(--tw-text-opacity));
 }
 
 .dark .custom-button:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(240 84 84 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 768px){
+  .custom-button{
+    height: auto;
+  }
+
+  .custom-button{
+    width: auto;
+  }
 }
 
 .absolute{
@@ -1032,6 +1048,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:mb-8{
     margin-bottom: 2rem;
+  }
+
+  .md\:block{
+    display: block;
   }
 
   .md\:w-medium{

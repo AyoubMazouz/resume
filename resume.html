@@ -17,8 +17,8 @@
         class="mt-2 space-x-2 absolute top-1 right-5 md:space-x-0 md:fixed md:top-52 md:right-1 flex md:flex-col md:space-y-6">
         <!-- darkMode -->
         <div id="dark" class="custom-button">
-            <div>Dark Mode</div>
-            <div id="sun-icon" class="hidden">
+            <div class="hidden md:block"">Dark Mode</div>
+            <div id=" sun-icon" class="hidden">
                 <i class="fa-solid fa-sun"></i>
             </div>
             <div id="moon-icon">
@@ -26,12 +26,12 @@
             </div>
         </div>
         <!-- download -->
-        <div class="custom-button">
-            <a href="../static/resume.pdf" download="resume.pdf">
+        <a class="custom-button" href="../static/resume.pdf" download="resume.pdf">
+            <div class="hidden md:block">
                 Download
-            </a>
+            </div>
             <i id="icon-download" class="fas fa-arrow-down"></i>
-        </div>
+        </a>
     </div>
 
     <!-- body -->
@@ -73,7 +73,7 @@
                             <div>
                                 <div class="detail-label">
                                     <i class="fas fa-phone-alt text-lg mr-2"></i>
-                                    0770759106
+                                    07 70 75 91 06
                                 </div>
                             </div>
                             <!-- email -->
@@ -150,13 +150,17 @@
                                 Debugging and testing.
                             </li>
                             <li>
+                                Work with API, and Data Bases.
+                            </li>
+                            <li>
                                 Well aware of best practices and project structure.
                             </li>
+
+                        </ul>
+                        <ul class="list-disc">
                             <li>
                                 Problem solving and critical thinking.
                             </li>
-                        </ul>
-                        <ul class="list-disc">
                             <li>
                                 Work efficiently in both environments (Linux, Windows).
                             </li>
