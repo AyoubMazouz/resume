@@ -476,19 +476,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-top-width: 2px;
   border-bottom-width: 2px;
   --tw-border-opacity: 1;
-  border-color: rgb(34 40 49 / var(--tw-border-opacity));
+  border-color: rgb(17 45 78 / var(--tw-border-opacity));
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 700;
   --tw-text-opacity: 1;
-  color: rgb(34 40 49 / var(--tw-text-opacity));
+  color: rgb(17 45 78 / var(--tw-text-opacity));
 }
 
 .dark .header{
   --tw-border-opacity: 1;
-  border-color: rgb(221 221 221 / var(--tw-border-opacity));
+  border-color: rgb(249 247 247 / var(--tw-border-opacity));
   --tw-text-opacity: 1;
-  color: rgb(221 221 221 / var(--tw-text-opacity));
+  color: rgb(249 247 247 / var(--tw-text-opacity));
 }
 
 .side-header{
@@ -496,7 +496,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.5rem;
   width: 100%;
   --tw-bg-opacity: 1;
-  background-color: rgb(34 40 49 / var(--tw-bg-opacity));
+  background-color: rgb(17 45 78 / var(--tw-bg-opacity));
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top: 0.25rem;
@@ -510,7 +510,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin: 0.25rem;
   border-radius: 0.25rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(34 40 49 / var(--tw-bg-opacity));
+  background-color: rgb(17 45 78 / var(--tw-bg-opacity));
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   padding-top: 0.25rem;
@@ -522,21 +522,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-items: center;
   border-radius: 0.25rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(221 221 221 / var(--tw-bg-opacity));
+  background-color: rgb(249 247 247 / var(--tw-bg-opacity));
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   font-weight: 600;
   --tw-text-opacity: 1;
-  color: rgb(34 40 49 / var(--tw-text-opacity));
+  color: rgb(17 45 78 / var(--tw-text-opacity));
 }
 
 .dark .detail-label{
   --tw-bg-opacity: 1;
-  background-color: rgb(34 40 49 / var(--tw-bg-opacity));
+  background-color: rgb(17 45 78 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgb(221 221 221 / var(--tw-text-opacity));
+  color: rgb(249 247 247 / var(--tw-text-opacity));
 }
 
 .svg {
@@ -555,13 +555,13 @@ Ensure the default browser behavior of the `hidden` attribute.
        column-gap: 0.5rem;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(221 221 221 / var(--tw-bg-opacity));
+  background-color: rgb(249 247 247 / var(--tw-bg-opacity));
   padding: 0.5rem;
   font-size: 0.75rem;
   line-height: 1rem;
   font-weight: 600;
   --tw-text-opacity: 1;
-  color: rgb(34 40 49 / var(--tw-text-opacity));
+  color: rgb(17 45 78 / var(--tw-text-opacity));
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
@@ -572,7 +572,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-scale-y: 1.05;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   --tw-bg-opacity: 1;
-  background-color: rgb(240 84 84 / var(--tw-bg-opacity));
+  background-color: rgb(63 114 175 / var(--tw-bg-opacity));
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -580,14 +580,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .dark .custom-button{
   --tw-bg-opacity: 1;
-  background-color: rgb(34 40 49 / var(--tw-bg-opacity));
+  background-color: rgb(17 45 78 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgb(221 221 221 / var(--tw-text-opacity));
+  color: rgb(249 247 247 / var(--tw-text-opacity));
 }
 
 .dark .custom-button:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(240 84 84 / var(--tw-bg-opacity));
+  background-color: rgb(63 114 175 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 768px){
@@ -832,7 +832,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .border-dark{
   --tw-border-opacity: 1;
-  border-color: rgb(34 40 49 / var(--tw-border-opacity));
+  border-color: rgb(17 45 78 / var(--tw-border-opacity));
 }
 
 .bg-white{
@@ -842,17 +842,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-light{
   --tw-bg-opacity: 1;
-  background-color: rgb(221 221 221 / var(--tw-bg-opacity));
+  background-color: rgb(249 247 247 / var(--tw-bg-opacity));
 }
 
 .bg-accent{
   --tw-bg-opacity: 1;
-  background-color: rgb(240 84 84 / var(--tw-bg-opacity));
+  background-color: rgb(63 114 175 / var(--tw-bg-opacity));
 }
 
 .bg-dark{
   --tw-bg-opacity: 1;
-  background-color: rgb(34 40 49 / var(--tw-bg-opacity));
+  background-color: rgb(17 45 78 / var(--tw-bg-opacity));
 }
 
 .py-2{
@@ -963,17 +963,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-dark{
   --tw-text-opacity: 1;
-  color: rgb(34 40 49 / var(--tw-text-opacity));
+  color: rgb(17 45 78 / var(--tw-text-opacity));
 }
 
 .text-light{
   --tw-text-opacity: 1;
-  color: rgb(221 221 221 / var(--tw-text-opacity));
+  color: rgb(249 247 247 / var(--tw-text-opacity));
 }
 
 .text-accent{
   --tw-text-opacity: 1;
-  color: rgb(240 84 84 / var(--tw-text-opacity));
+  color: rgb(63 114 175 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -1010,22 +1010,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .dark .dark\:bg-dark{
   --tw-bg-opacity: 1;
-  background-color: rgb(34 40 49 / var(--tw-bg-opacity));
+  background-color: rgb(17 45 78 / var(--tw-bg-opacity));
 }
 
 .dark .dark\:bg-light{
   --tw-bg-opacity: 1;
-  background-color: rgb(221 221 221 / var(--tw-bg-opacity));
+  background-color: rgb(249 247 247 / var(--tw-bg-opacity));
 }
 
 .dark .dark\:text-dark{
   --tw-text-opacity: 1;
-  color: rgb(34 40 49 / var(--tw-text-opacity));
+  color: rgb(17 45 78 / var(--tw-text-opacity));
 }
 
 .dark .dark\:text-light{
   --tw-text-opacity: 1;
-  color: rgb(221 221 221 / var(--tw-text-opacity));
+  color: rgb(249 247 247 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px){
